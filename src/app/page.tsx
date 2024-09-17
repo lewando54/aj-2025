@@ -22,7 +22,7 @@ export default function Home() {
             <Heading>O ślubie</Heading>
             <div className="text-2xl flex flex-col items-center gap-4 mt-5">
               <p>Ceremonia odbędzie się w</p>
-              <h3 className="text-3xl font-bold text-center">Rezydencja na Wzgórzu<br/>ul. Wazów 30/32, 93-435 Łódź</h3>
+              <h3 className="text-3xl font-bold text-center">{`${process.env.ADDRESS}`}</h3>
               <p>o godzinie</p>
               <h3 className="text-3xl font-bold"><b>17:00</b></h3>
               <p>następnie w tym samym miejscu odbędzie się przyjęcie weselne.</p>
