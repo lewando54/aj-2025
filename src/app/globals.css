@@ -31,3 +31,24 @@ body {
     text-wrap: balance;
   }
 }
+
+.heading-with-trinkets {
+  @apply text-3xl font-bold text-center;
+  position: relative;
+}
+
+.heading-with-trinkets::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 125px;
+  @apply bg-[#b39727] w-24 h-1;
+}
+
+.heading-with-trinkets::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 125px;
+  @apply bg-[#b39727] w-24 h-1;
+}
